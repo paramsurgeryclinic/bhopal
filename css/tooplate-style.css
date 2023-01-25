@@ -493,7 +493,7 @@ header span i {
   -----------------------------------------*/
 
 #about {
-  background: url('/paramImages/health-professional-team_52683-36023.webp') no-repeat top center;
+  background: url('../paramImages/health-professional-team_52683-36023.webp') no-repeat top center;
   background-size: cover;
   padding-top: 10%;
   /* padding-bottom: 150px; */
