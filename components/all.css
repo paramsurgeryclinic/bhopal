@@ -25,14 +25,22 @@ Creamy: #f5f3ec */
   --dark: rgba(35, 33, 33, 0.949);
 }
 
+<<<<<<< HEAD
 .container {
+=======
+/* .container {
+>>>>>>> 62fa1d2c15caf935312efab6aab8240ff59ea040
   width: 1100px;
   padding: 0;
 }
 
 .container-fluid {
   padding: 0px;
+<<<<<<< HEAD
 }
+=======
+} */
+>>>>>>> 62fa1d2c15caf935312efab6aab8240ff59ea040
 
 .topppest {
   color: #0037d2;
@@ -48,34 +56,61 @@ Creamy: #f5f3ec */
   padding: 3px 0px;
 }
 
+<<<<<<< HEAD
 .back_button{
   font-size: large;
 }
 
 .back_button i{
+=======
+.back_button {
+  font-size: large;
+}
+
+.back_button i {
+>>>>>>> 62fa1d2c15caf935312efab6aab8240ff59ea040
   width: 25px;
   font-size: medium;
 }
 
+<<<<<<< HEAD
 .head{
+=======
+.head {
+>>>>>>> 62fa1d2c15caf935312efab6aab8240ff59ea040
   text-align: center;
   font-weight: bolder;
   font-size: 30px;
   margin: 20px;
 }
 
+<<<<<<< HEAD
 .question{
   margin: 16px 0px;
 }
 
 .que{
+=======
+.question {
+  margin: 16px 0px;
+}
+
+.que {
+>>>>>>> 62fa1d2c15caf935312efab6aab8240ff59ea040
   text-decoration-line: underline;
   text-decoration-style: dotted;
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 .ans{
   margin: 1px 0px;
   margin-left: 20px;
   
+=======
+.ans {
+  margin: 1px 0px;
+  margin-left: 20px;
+
+>>>>>>> 62fa1d2c15caf935312efab6aab8240ff59ea040
 }
