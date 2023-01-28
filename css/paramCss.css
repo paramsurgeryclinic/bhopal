@@ -1,0 +1,134 @@
+:root {
+    /* Blue:#0037d2
+  Creamy: #f5f3ec */
+    --text_blue: rgb(45, 128, 200);
+    /* --blue: #0037d2; */
+    --blue: #0c6dfd;
+    --creamy: #f5f3ec;
+    --dark-mine: rgba(35, 33, 33, 0.949);
+
+    --dark: #0a001a;
+    --color-yellow: #289adc;
+    --color-purple: #11583ed1;
+    --white-and-gray-light-gray: #e2e0e5;
+}
+
+.welcome {
+    width: auto;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    font-size: 40px;
+    color: var(--creamy);
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.welcome .psc {
+    color: var(--creamy);
+    font-stretch: extra-expanded;
+    font-weight: 700;
+}
+
+.welcome button {
+    font-size: medium;
+    width: 150px;
+}
+
+.infos {
+    height: 600px;
+    background-image: url("/images/health-professional-team_52683-36023.webp");
+
+}
+
+.infos_1 {
+    position: relative;
+}
+
+.head_boxx {
+    width: 45%;
+    position: absolute;
+    right: 0px;
+    /* border: 2px solid black; */
+}
+
+.boxess {
+    padding: 25px;
+    /* margin: 10px 0px; */
+    margin-top: 20%;
+    background-color: white;
+    border-radius: 7px;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxess span {
+    color: var(--blue);
+    text-align: center;
+}
+
+.boxess i {
+    font-size: 35px;
+    color: var(--blue);
+}
+
+.effectss {
+    opacity: 0.85;
+    transition: height 4s;
+    border: none;
+}
+
+.effectss .card {
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+
+.effectss .card-title {
+    color: rgb(45, 128, 200)
+}
+
+.effectss:hover {
+    opacity: 1;
+}
+
+.effectss:hover .card-body {
+    /* font-size: 17px; */
+    /* height: 230px; */
+}
+
+
+/* Forms css */
+
+.inputField {
+    margin: 3px 0px;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.buttonbox {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-dot-pattern {
+    background-color: #000000;
+    opacity: 0.9;
+    background-image: radial-gradient(#ffffff 0.5px, #000000 0.5px);
+    background-size: 10px 10px;
+}
+
+.bg-plain {
+    background-color: #e4e4e4;
+    opacity: 0.9;
+}
