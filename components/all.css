@@ -48,6 +48,10 @@ Creamy: #f5f3ec */
   padding: 3px 0px;
 }
 
+.portion a{
+  text-decoration: none;
+}
+
 .back_button {
   font-size: large;
 }
