@@ -1,15 +1,9 @@
 :root {
-    /* Blue:#0037d2
-  Creamy: #f5f3ec */
-    --text_blue: rgb(45, 128, 200);
-    /* --blue: #0037d2; */
-    --blue: #0c6dfd;
+    --light-blue:#0171bb;
+    --dark-blue: #2E3192;
     --creamy: #f5f3ec;
     --dark-mine: rgba(35, 33, 33, 0.949);
-
     --dark: #0a001a;
-    --color-yellow: #289adc;
-    --color-purple: #11583ed1;
     --white-and-gray-light-gray: #e2e0e5;
 }
 
@@ -67,22 +61,22 @@
 }
 
 .boxess span {
-    color: var(--blue);
+    color: var(--light-blue);
     text-align: center;
 }
 
 .boxess i {
     font-size: 35px;
-    color: var(--blue);
+    color: var(--dark-blue);
 }
 
-.effectss {
+.effectss{
     opacity: 0.85;
-    transition: height 4s;
     border: none;
 }
 
 .effectss .card {
+    height: 300px;
     border-radius: 15px;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
@@ -92,18 +86,16 @@
 
 
 .effectss .card-title {
-    color: rgb(45, 128, 200)
+    color: var(--light-blue)
 }
 
 .effectss:hover {
     opacity: 1;
 }
 
-.effectss:hover .card-body {
-    /* font-size: 17px; */
-    /* height: 230px; */
+.card-link{
+    color: var(--light-blue);
 }
-
 
 /* Forms css */
 
@@ -131,4 +123,13 @@
 .bg-plain {
     background-color: #e4e4e4;
     opacity: 0.9;
+}
+
+.flashy span a{
+    color: var(--dark-blue);
+    
+}
+
+.flashy span{
+    color: var(--light-blue);
 }
