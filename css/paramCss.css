@@ -126,10 +126,18 @@
 }
 
 .flashy span a{
-    color: var(--dark-blue);
+    color: var(--light-blue);
     
 }
 
 .flashy span{
     color: var(--light-blue);
+}
+
+.flashy i{
+    color: var(--dark-blue);
+}
+
+.nav-link{
+    
 }
