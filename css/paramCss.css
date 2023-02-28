@@ -150,6 +150,6 @@ a{
     font-weight: bold;
 }
 
-.logo a:hover{
+.logo:hover{
     color: var(--light-blue);
 }
