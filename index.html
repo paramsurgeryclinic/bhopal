@@ -18,6 +18,7 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
@@ -52,7 +53,7 @@
       <div class="container">
         <div class="row flashy">
           <div class="col-md-4 col-sm-5">
-            <p>Dr. Ashay Rathore</p>
+            <p><b>Dr. Ashay Rathore</b></p>
           </div>
 
           <div class="col-md-8 col-sm-7 text-align-right">
@@ -441,18 +442,20 @@
             <img
               src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               class="w-100"
-              alt=""
+              alt="doctor-image"
             />
           </div>
 
           <div class="col-md-6 col-sm-6">
             <!-- CONTACT FORM HERE -->
             <form
-              id="appointment-form"
+              id="myForm"
               role="form"
               method="post"
               action="#"
               class="ms-5"
+              autocomplete="off"
+              name="google-sheet"
             >
               <!-- SECTION TITLE -->
               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
@@ -466,7 +469,7 @@
                     type="text"
                     class="form-control"
                     id="name"
-                    name="name"
+                    name="Name"
                     placeholder="Full Name"
                   />
                 </div>
@@ -477,19 +480,25 @@
                     type="tel"
                     class="form-control"
                     id="phone"
-                    name="phone"
+                    name="Phone"
                     placeholder="Phone"
                   />
                 </div>
 
                 <div class="col-md-6 col-sm-6">
-                  <label for="date">Select Date</label>
+                  <label for="email">Email ID</label>
                   <input
-                    type="date"
-                    name="date"
-                    value=""
+                    type="email"
                     class="form-control"
+                    id="email"
+                    name="Email"
+                    placeholder="Email ID"
                   />
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                  <label for="date">Select Date</label>
+                  <input type="date" name="Appointment_Date" class="form-control" />
                 </div>
 
                 <div class="col-md-12 col-sm-12">
@@ -511,15 +520,6 @@
 
     <!-- GOOGLE MAP -->
     <section id="google-map">
-      <!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-	-->
-      <!-- <iframe
-               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(Param%20Surgery%20Clinic)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-               width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> -->
       <div style="width: 100%">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2860.0789663715013!2d77.369736803259!3d23.274829793646262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c67b3948efafd%3A0xdd8a15b582ff1f93!2sParam%20Surgery%20Clinic!5e0!3m2!1sen!2sin!4v1677488033512!5m2!1sen!2sin"
@@ -591,26 +591,25 @@
                 <p>Copyright &copy; 2022 | Param Surgery Clinic</p>
               </div>
             </div>
-            <!-- <div class="col-md-6 col-sm-6">
-                              <div class="footer-link">
-                                   <a href="#">Laboratory Tests</a>
-                                   <a href="#">Departments</a>
-                                   <a href="#">Insurance Policy</a>
-                                   <a href="#">Careers</a>
-                              </div>
-                         </div>
-                         <div class="col-md-2 col-sm-2 text-align-center">
-                              <div class="angle-up-btn">
-                                   <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i
-                                             class="fa fa-angle-up"></i></a>
-                              </div>
-                         </div> -->
           </div>
         </div>
       </div>
     </footer>
 
     <!-- SCRIPTS -->
+    <script>
+      
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwpqQdVv09uoswJ7J4wV-B5JpT2yNocE8oPvyOlne-mt0vArFTi08dxlRMKeVRXAwz_ZQ/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
