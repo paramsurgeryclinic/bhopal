@@ -137,3 +137,7 @@
 .flashy i{
     color: var(--dark-blue);
 }
+
+a{
+    color: #ffffff;
+}
