@@ -1,2 +1,2 @@
 # bhopal
-https://paramsurgeryclinic.github.io/bhopal/
+Deployed @ https://paramsurgeryclinic.github.io/bhopal/
